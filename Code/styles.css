@@ -1,0 +1,261 @@
+/************************ Desktop Break Point **********************/
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #47353a;
+  margin: 0px;
+}
+
+header {
+  padding: 10px 15px;
+  overflow: hidden;
+}
+
+header h1 {
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header nav a {
+  color: #47353a;
+  text-decoration: none;
+  margin-left: 12px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.hero {
+  background-image: url(../Assets/hero.jpg);
+  background-size: cover;
+  padding-top: 230px;
+  padding-bottom: 200px;
+  background-position: right center;
+}
+
+.hero div {
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-family: "David Libre", serif;
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero p {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flowers {
+  overflow: hidden;
+}
+
+.flowers img {
+  float: left;
+  width: 33.333%;
+}
+
+.quotes {
+  overflow: hidden;
+  text-align: center;
+}
+
+.quote div {
+  text-align: center;
+  padding: 50px 20px 40px 20px;
+}
+
+.first-quote {
+  background-color: #f7f1ee;
+  float: left;
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.second-quote {
+  float: right;
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.quotes img {
+  width: 75px;
+  border-radius: 100%;
+}
+
+.quotes blockquote {
+  font-family: "David Libre", serif;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 700;
+  max-width: 400px;
+  margin: 15px auto 5px auto;
+}
+
+.chair {
+  background-image: url(../Assets/full-bleed.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  padding: 0;
+  height: 500px;
+}
+
+.logos {
+  background-color: #eeae9f;
+  padding: 20px 20px 35px 20px;
+  text-align: center;
+}
+
+.logos p {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.logos img {
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+footer {
+  background-color: #47353a;
+  padding: 20px 25px;
+  overflow: hidden;
+}
+
+footer img {
+  float: left;
+  margin-top: 15px;
+}
+
+footer p {
+  float: right;
+  font-size: 14px;
+  color: #ccc9ca;
+  font-weight: 700;
+}
+
+/************************* Tablet Break Point **************************/
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 38px;
+    margin-bottom: 5px;
+  }
+
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .chair {
+    height: 440px;
+  }
+
+  .first-quote {
+    float: none;
+    width: auto;
+    padding: 30px 30px 40px 30px;
+  }
+
+  .second-quote {
+    float: none;
+    width: auto;
+    padding: 30px 30px 40px 30px;
+  }
+
+  .quotes blockquote {
+    font-size: 20px;
+  }
+
+  .quotes p {
+    display: none;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  header nav {
+    line-height: 24px;
+  }
+}
+
+/************************* Mobile Break Point **************************/
+
+@media (max-width: 430px) {
+  h1,
+  nav {
+    float: none;
+  }
+
+  .quotes p {
+    font-weight: bold;
+  }
+
+  header nav a {
+    margin-left: 0px;
+    margin-right: 12px;
+  }
+
+  .flowers img {
+    float: none;
+    width: auto;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 820px) {
+  .logo img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 680px) {
+  .logo img {
+    margin: 0 auto 35px auto;
+    display: block;
+  }
+
+  .logo img:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 820) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(51, 51, 51, 0.4);
+  }
+
+  .hero {
+    margin-top: 50px;
+  }
+}
